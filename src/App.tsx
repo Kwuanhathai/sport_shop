@@ -12,7 +12,7 @@ import ErrorPage from "./pages/error-page/error-page"
 import { useGetData } from "./helper/use-axios"
 
 
-const url = "http://localhost:4200/api/product-details"
+const url = "https://sport-shop-8.onrender.com/api/product-details"
 
 function App() {
 

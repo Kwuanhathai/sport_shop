@@ -53,7 +53,7 @@ const ProductDetails = () => {
 
   async function getProduct(ProductId: any) {
     const response = await fetch(
-      `http://localhost:4200/api/product-details/${ProductId}`
+      `https://sport-shop-8.onrender.com/api/product-details/${ProductId}`
     );
 
     const ProductData = await response.json();
@@ -103,7 +103,7 @@ const ProductDetails = () => {
               <Col span={11}>
                 <ContentBox style={{alignItems: 'flex-start'}}>
                   <Image
-                    src={`http://localhost:4200/image/${productItem?.picture}`}
+                    src={`https://sport-shop-8.onrender.com/image/${productItem?.picture}`}
                     style={{
                       width: "25vw",
                       height: "35wh",

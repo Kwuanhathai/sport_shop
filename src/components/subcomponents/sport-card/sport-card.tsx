@@ -54,7 +54,7 @@ const SportCard = (props: any) => {
                     />
                 </IconContainer>
                 <Image
-                    src={`http://localhost:4200/image/${data.picture}`}
+                    src={`https://sport-shop-8.onrender.com/image/${data.picture}`}
                     style={{
                         width: "20rem",
                         height: "15rem",

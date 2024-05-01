@@ -14,7 +14,7 @@ type FieldType = {
     picture?: any;
 };
 
-const addUrl = "http://localhost:4200/api/products/add"
+const addUrl = "https://sport-shop-8.onrender.com/api/products/add"
 
 function AddProduct() {
     const authToken = localStorage.getItem('token')

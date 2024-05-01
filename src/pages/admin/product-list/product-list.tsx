@@ -69,7 +69,7 @@ function ProductList(props: any) {
         setIsModalOpen(false)
 
         try {
-            const response = await axios.delete(`http://localhost:4200/api/products/delete/${deleteId}`, { headers })
+            const response = await axios.delete(`https://sport-shop-8.onrender.com/api/products/delete/${deleteId}`, { headers })
 
             if (response.data != null) {
                 setTimeout(function () {
@@ -131,7 +131,7 @@ function ProductList(props: any) {
                     <Table.Column title="รูปภาพ" dataIndex="picture" key="picture" align="center"
                         render={(_, record: any) => (
                             <Image
-                                src={`http://localhost:4200/image/${record?.picture}`}
+                                src={`https://sport-shop-8.onrender.com/image/${record?.picture}`}
                                 style={{
                                     width: "10rem",
                                     height: "7rem",

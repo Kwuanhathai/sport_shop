@@ -40,12 +40,12 @@ function EditProduct() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:4200/api/product-details/${productID}`);
+                const response = await axios.get(`https://sport-shop-8.onrender.com/api/product-details/${productID}`);
                 const data = response.data;
                 setInitialValues(data);
 
                 if (data?.picture) {
-                    setCurrentImage(`http://localhost:4200/image/${data.picture}`)
+                    setCurrentImage(`https://sport-shop-8.onrender.com/image/${data.picture}`)
                 }
                 setLoading(false);
             } catch (error) {
@@ -86,7 +86,7 @@ function EditProduct() {
                 formData.append('image', picture[0]?.originFileObj)
             }
 
-            const response = await axios.put(`http://localhost:4200/api/products/update/${productID}`, formData, { headers })
+            const response = await axios.put(`https://sport-shop-8.onrender.com/api/products/update/${productID}`, formData, { headers })
 
             if (response.data != null) {
                 Modal.success({
