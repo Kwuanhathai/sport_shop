@@ -63,7 +63,8 @@ function UserLayout(props: any) {
 
   const onClick: MenuProps['onClick'] = (e) => {
     if (e.key == "product-lists") {
-      window.location.reload()
+      // window.location.reload()
+      history.go(0)
     } 
     else if (e.key == "admin") {
       if (loggedIn) {

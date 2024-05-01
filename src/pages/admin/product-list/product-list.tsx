@@ -38,9 +38,6 @@ function ProductList(props: any) {
         }
     });
 
-    console.log(`dataItem: ${dataItem}`)
-
-
     const [pagination, setPagination] = useState({
         current: 1,
         pageSize: 5,
@@ -81,7 +78,8 @@ function ProductList(props: any) {
             }
 
             setTimeout(function () {
-                window.location.reload()
+                // window.location.reload()
+                history.go(0)
             }, 4000);
 
 

@@ -47,7 +47,8 @@ function AddProduct() {
             }
 
             setTimeout(function () {
-                window.location.reload()
+                // window.location.reload()
+                history.go(0)
             }, 3000);
 
 

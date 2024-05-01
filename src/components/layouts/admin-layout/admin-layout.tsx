@@ -43,7 +43,8 @@ function AdminLayout(props: any) {
 
     const onClick: MenuProps['onClick'] = (e) => {
         if (e.key == "product-admin") {
-            window.location.reload()
+            // window.location.reload()
+            history.go(0)
         } 
       };
 
