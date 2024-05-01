@@ -14,9 +14,7 @@ const useGetData = (url: string) => {
       setData(null)
 
       const res: any = await axios.get(url)
-      console.log(`res user: ${res}`)
       const result: any = await res?.data
-      console.log(`result user: ${result}`)
 
       setData(result)
       console.log('Data fetched successfully')
