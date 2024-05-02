@@ -1,0 +1,37 @@
+/*                                   /index.html                                    200
+/product-details/*                   /product-details/index.html                    200
+/admin/*                             /admin/index.html                              200
+/admin/product-list/*                /admin/product-list/index.html                 200
+/admin/product-list/add/*            /admin/product-list/add/index.html             200
+/admin/product-list/edit-product/*   /admin/product-list/edit-product/index.html    200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/product-details/*"
+  to = "/product-details/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/product-list/*"
+  to = "/admin/product-list/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/product-list/add/*"
+  to = "/admin/product-list/add/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/product-list/edit-product/*"
+  to = "/admin/product-list/edit-product/index.html"
+  status = 200
+  
