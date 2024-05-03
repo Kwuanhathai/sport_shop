@@ -124,7 +124,7 @@ const ProductDetails = () => {
                 <Row justify="end">
                   <div style={{ justifyContent: "end", alignItems: "end" }}>
                     <StyledText style={{ fontSize: "7rem" }}>
-                      {productItem?.price.toLocaleString()}
+                      {productItem?.price?.toLocaleString()}
                     </StyledText>
                     <StyledText style={{ fontSize: "1.6rem", paddingLeft: "2rem" }}> บาท</StyledText>
                   </div>
