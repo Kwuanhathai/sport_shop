@@ -10,17 +10,27 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/admin/login/login"
 import ErrorPage from "./pages/error-page/error-page"
 import { useGetData } from "./helper/use-axios"
+import { LoadingOutlined } from "@ant-design/icons"
+import { Typography } from "antd"
 
 
+const { Text } = Typography
 const url = "https://sport-shop-8.onrender.com/api/product-details"
 
 function App() {
-
-
   const { data, loading, error } = useGetData(url)
 
   if (loading) {
-    return <p>loading...</p>;
+    return <div 
+      style={{
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100vh'
+      }}>
+      <LoadingOutlined style={{ fontSize: "10rem", fontWeight: "bold", color: "white"}}/>
+      <Text style={{fontSize: "3.2rem", fontWeight: "bold", color: "white"}}>Loading...</Text>
+    </div> 
   }
 
   if (error) {
