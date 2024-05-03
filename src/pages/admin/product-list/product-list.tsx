@@ -34,7 +34,7 @@ function ProductList(props: any) {
             picture: item?.picture,
             type: item?.type,
             description: item?.description,
-            price: item?.price,
+            price: item?.price.toLocaleString(),
         }
     });
 

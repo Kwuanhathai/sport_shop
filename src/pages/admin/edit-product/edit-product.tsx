@@ -199,7 +199,7 @@ function EditProduct() {
                             <Form.Item<FieldType>
                                 name="price"
                                 label="ราคาสินค้า"
-                                initialValue={initialValues?.price}
+                                initialValue={initialValues?.price.toLocaleString()}
                             >
                                 <Input
                                     placeholder="หน่วยเป็นบาท"
