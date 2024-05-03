@@ -28,8 +28,12 @@ function App() {
         alignItems: 'center', 
         height: '100vh'
       }}>
-      <LoadingOutlined style={{ fontSize: "10rem", fontWeight: "bold", color: "white"}}/>
-      <Text style={{fontSize: "3.2rem", fontWeight: "bold", color: "white"}}>Loading...</Text>
+      <div>
+        <LoadingOutlined style={{ fontSize: "10rem", fontWeight: "bold", color: "white"}}/>
+      </div>
+      <div>
+        <Text style={{fontSize: "3.2rem", fontWeight: "bold", color: "white"}}>Loading...</Text>
+      </div>
     </div> 
   }
 
