@@ -29,7 +29,7 @@ function App() {
         height: '100vh'
       }}>
       <div>
-        <LoadingOutlined style={{ fontSize: "10rem", fontWeight: "bold", color: "white"}}/>
+        <LoadingOutlined style={{ fontSize: "10rem", fontWeight: "bold", color: "white", marginRight: "5%"}}/>
       </div>
       <div>
         <Text style={{fontSize: "3.2rem", fontWeight: "bold", color: "white"}}>Loading...</Text>
